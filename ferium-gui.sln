@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ferium-gui", "ferium-gui.csproj", "{5DC9CF25-4C76-43C6-8B69-9014A8885B4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DC9CF25-4C76-43C6-8B69-9014A8885B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC9CF25-4C76-43C6-8B69-9014A8885B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC9CF25-4C76-43C6-8B69-9014A8885B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC9CF25-4C76-43C6-8B69-9014A8885B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96DA466E-1F62-4AD1-A602-506637368FF5}
+	EndGlobalSection
+EndGlobal
