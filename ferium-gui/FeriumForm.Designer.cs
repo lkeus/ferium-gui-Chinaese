@@ -39,16 +39,20 @@
             this.LabelModDetails = new System.Windows.Forms.Label();
             this.LabelActiveProfile = new System.Windows.Forms.Label();
             this.OpenModsButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_open_url = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UpgradeModButton
             // 
-            this.UpgradeModButton.Location = new System.Drawing.Point(202, 160);
+            this.UpgradeModButton.Location = new System.Drawing.Point(248, 76);
             this.UpgradeModButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.UpgradeModButton.Name = "UpgradeModButton";
-            this.UpgradeModButton.Size = new System.Drawing.Size(114, 29);
+            this.UpgradeModButton.Size = new System.Drawing.Size(142, 35);
             this.UpgradeModButton.TabIndex = 1;
-            this.UpgradeModButton.Text = "Update Mods";
+            this.UpgradeModButton.Text = "检查更新并下载";
             this.UpgradeModButton.UseVisualStyleBackColor = true;
             this.UpgradeModButton.Click += new System.EventHandler(this.UpgradeModButton_Click);
             // 
@@ -57,44 +61,44 @@
             this.ModList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ModList.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.ModList.FormattingEnabled = true;
-            this.ModList.ItemHeight = 16;
-            this.ModList.Location = new System.Drawing.Point(10, 89);
+            this.ModList.ItemHeight = 20;
+            this.ModList.Location = new System.Drawing.Point(6, 29);
             this.ModList.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.ModList.Name = "ModList";
-            this.ModList.Size = new System.Drawing.Size(182, 228);
+            this.ModList.Size = new System.Drawing.Size(241, 484);
             this.ModList.TabIndex = 3;
             this.ModList.SelectedIndexChanged += new System.EventHandler(this.ModList_SelectedIndexChanged);
             // 
             // RemoveModButton
             // 
-            this.RemoveModButton.Location = new System.Drawing.Point(202, 125);
+            this.RemoveModButton.Location = new System.Drawing.Point(390, 41);
             this.RemoveModButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.RemoveModButton.Name = "RemoveModButton";
-            this.RemoveModButton.Size = new System.Drawing.Size(114, 29);
+            this.RemoveModButton.Size = new System.Drawing.Size(146, 35);
             this.RemoveModButton.TabIndex = 4;
-            this.RemoveModButton.Text = "Remove Mod";
+            this.RemoveModButton.Text = "删除模组";
             this.RemoveModButton.UseVisualStyleBackColor = true;
             this.RemoveModButton.Click += new System.EventHandler(this.RemoveModButton_Click);
             // 
             // AddModButton
             // 
-            this.AddModButton.Location = new System.Drawing.Point(202, 89);
+            this.AddModButton.Location = new System.Drawing.Point(248, 41);
             this.AddModButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.AddModButton.Name = "AddModButton";
-            this.AddModButton.Size = new System.Drawing.Size(114, 29);
+            this.AddModButton.Size = new System.Drawing.Size(142, 35);
             this.AddModButton.TabIndex = 5;
-            this.AddModButton.Text = "Add Mod";
+            this.AddModButton.Text = "添加模组";
             this.AddModButton.UseVisualStyleBackColor = true;
             this.AddModButton.Click += new System.EventHandler(this.AddModButton_Click);
             // 
             // ConfigureProfileButton
             // 
-            this.ConfigureProfileButton.Location = new System.Drawing.Point(178, 23);
+            this.ConfigureProfileButton.Location = new System.Drawing.Point(394, 6);
             this.ConfigureProfileButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.ConfigureProfileButton.Name = "ConfigureProfileButton";
             this.ConfigureProfileButton.Size = new System.Drawing.Size(138, 29);
             this.ConfigureProfileButton.TabIndex = 6;
-            this.ConfigureProfileButton.Text = "Configure Profiles";
+            this.ConfigureProfileButton.Text = "配置";
             this.ConfigureProfileButton.UseVisualStyleBackColor = true;
             this.ConfigureProfileButton.Click += new System.EventHandler(this.ConfigureProfileButton_Click);
             // 
@@ -102,11 +106,11 @@
             // 
             this.ProfileComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProfileComboBox.FormattingEnabled = true;
-            this.ProfileComboBox.Location = new System.Drawing.Point(9, 26);
+            this.ProfileComboBox.Location = new System.Drawing.Point(252, 7);
             this.ProfileComboBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.ProfileComboBox.MaxDropDownItems = 100;
             this.ProfileComboBox.Name = "ProfileComboBox";
-            this.ProfileComboBox.Size = new System.Drawing.Size(159, 24);
+            this.ProfileComboBox.Size = new System.Drawing.Size(132, 28);
             this.ProfileComboBox.TabIndex = 7;
             this.ProfileComboBox.SelectedIndexChanged += new System.EventHandler(this.ProfileComboBox_SelectedIndexChanged);
             // 
@@ -114,13 +118,13 @@
             // 
             this.ModInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ModInfo.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.ModInfo.Location = new System.Drawing.Point(9, 343);
+            this.ModInfo.Location = new System.Drawing.Point(9, 539);
             this.ModInfo.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.ModInfo.MaxLength = 2048;
             this.ModInfo.Name = "ModInfo";
             this.ModInfo.ReadOnly = true;
             this.ModInfo.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ModInfo.Size = new System.Drawing.Size(307, 69);
+            this.ModInfo.Size = new System.Drawing.Size(238, 112);
             this.ModInfo.TabIndex = 9;
             this.ModInfo.Text = "";
             // 
@@ -128,21 +132,21 @@
             // 
             this.ModLabel.AutoSize = true;
             this.ModLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.ModLabel.Location = new System.Drawing.Point(6, 69);
+            this.ModLabel.Location = new System.Drawing.Point(5, 10);
             this.ModLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.ModLabel.Name = "ModLabel";
-            this.ModLabel.Size = new System.Drawing.Size(57, 16);
+            this.ModLabel.Size = new System.Drawing.Size(77, 20);
             this.ModLabel.TabIndex = 10;
-            this.ModLabel.Text = "Mod List";
+            this.ModLabel.Text = "模组列表";
             // 
             // LabelModDetails
             // 
             this.LabelModDetails.AutoSize = true;
             this.LabelModDetails.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.LabelModDetails.Location = new System.Drawing.Point(9, 324);
+            this.LabelModDetails.Location = new System.Drawing.Point(5, 516);
             this.LabelModDetails.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LabelModDetails.Name = "LabelModDetails";
-            this.LabelModDetails.Size = new System.Drawing.Size(79, 16);
+            this.LabelModDetails.Size = new System.Drawing.Size(99, 20);
             this.LabelModDetails.TabIndex = 11;
             this.LabelModDetails.Text = "Mod Details";
             // 
@@ -150,30 +154,73 @@
             // 
             this.LabelActiveProfile.AutoSize = true;
             this.LabelActiveProfile.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.LabelActiveProfile.Location = new System.Drawing.Point(6, 6);
+            this.LabelActiveProfile.Location = new System.Drawing.Point(131, 6);
             this.LabelActiveProfile.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LabelActiveProfile.Name = "LabelActiveProfile";
-            this.LabelActiveProfile.Size = new System.Drawing.Size(85, 16);
+            this.LabelActiveProfile.Size = new System.Drawing.Size(111, 20);
             this.LabelActiveProfile.TabIndex = 12;
-            this.LabelActiveProfile.Text = "Active Profile";
+            this.LabelActiveProfile.Text = "当前配置文件";
             // 
             // OpenModsButton
             // 
-            this.OpenModsButton.Location = new System.Drawing.Point(202, 195);
+            this.OpenModsButton.Location = new System.Drawing.Point(390, 76);
             this.OpenModsButton.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.OpenModsButton.Name = "OpenModsButton";
-            this.OpenModsButton.Size = new System.Drawing.Size(114, 29);
+            this.OpenModsButton.Size = new System.Drawing.Size(146, 35);
             this.OpenModsButton.TabIndex = 13;
-            this.OpenModsButton.Text = "Open Mod Dir";
+            this.OpenModsButton.Text = "打开模组文件夹";
             this.OpenModsButton.UseVisualStyleBackColor = true;
             this.OpenModsButton.Click += new System.EventHandler(this.OpenModsButton_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(248, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(228, 26);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(248, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 36);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "确定修改";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(248, 116);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 20);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "汉化名称";
+            // 
+            // button_open_url
+            // 
+            this.button_open_url.Location = new System.Drawing.Point(368, 172);
+            this.button_open_url.Name = "button_open_url";
+            this.button_open_url.Size = new System.Drawing.Size(129, 35);
+            this.button_open_url.TabIndex = 17;
+            this.button_open_url.Text = "打开模组网站";
+            this.button_open_url.UseVisualStyleBackColor = true;
+            this.button_open_url.Click += new System.EventHandler(this.button_open_url_Click);
+            // 
             // FeriumForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(325, 420);
+            this.ClientSize = new System.Drawing.Size(546, 663);
+            this.Controls.Add(this.button_open_url);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.OpenModsButton);
             this.Controls.Add(this.LabelActiveProfile);
             this.Controls.Add(this.LabelModDetails);
@@ -209,6 +256,10 @@
         private System.Windows.Forms.Label LabelModDetails;
         private System.Windows.Forms.Label LabelActiveProfile;
         private System.Windows.Forms.Button OpenModsButton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_open_url;
     }
 }
 
