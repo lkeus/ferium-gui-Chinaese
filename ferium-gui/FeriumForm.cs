@@ -79,8 +79,8 @@ namespace ferium_gui
 				return;
 
 			ferium.IssueCommand("remove " + "\"" + cfg.profiles[cfg.active_profile].mods[ModList.SelectedIndex].name + "\"");
-
-			LoadProfileMods();
+            MessageBox.Show(cfg.profiles[cfg.active_profile].mods[ModList.SelectedIndex].name);
+            LoadProfileMods();
 		}
 
 		private void UpgradeModButton_Click(object sender, EventArgs e)
@@ -182,11 +182,13 @@ namespace ferium_gui
             else
             {
                 var cfg = JsonConvert.DeserializeObject<ConfigClass.Root>(File.ReadAllText(configclass.ConfigPath()));
-                string configFile = "C:\\Users\\15153\\.config\\ferium\\config.json";
+                string configFile = configclass.ConfigPath();
                 string json = File.ReadAllText(configFile);
                 string mod_name = cfg.profiles[cfg.active_profile].mods[ModList.SelectedIndex].name;
                 string new_name = textBox1.Text;
                 JObject config = JObject.Parse(json);
+                
+				
 
                 // 获取 mod 列表
                 JArray mods = (JArray)config["profiles"][0]["mods"];
