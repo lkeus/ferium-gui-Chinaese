@@ -79,7 +79,6 @@ namespace ferium_gui
 				return;
 
 			ferium.IssueCommand("remove " + "\"" + cfg.profiles[cfg.active_profile].mods[ModList.SelectedIndex].name + "\"");
-            MessageBox.Show(cfg.profiles[cfg.active_profile].mods[ModList.SelectedIndex].name);
             LoadProfileMods();
 		}
 
